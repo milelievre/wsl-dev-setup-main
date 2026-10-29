@@ -214,7 +214,7 @@ function Invoke-WslDevSetup {
     # ========================================================
     # CONFIGURATION DU DEPOT GIT
     # ========================================================
-    $RepoZipUrl = https://github.com/milelievre/wsl-dev-setup-main/archive/refs/heads/main.zip"
+    $RepoZipUrl = "https://github.com/milelievre/wsl-dev-setup-main/archive/refs/heads/main.zip"
 
     # Demande de l'utilisateur Linux
     $TargetUser = Read-Host "Entrez le nom d'utilisateur Linux souhaite (ex: mallain)"
