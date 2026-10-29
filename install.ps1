@@ -120,7 +120,7 @@ function Invoke-WslDevSetup {
     # ========================================================
     # Telechargement isole du script de check AVANT toute autre action (le ZIP
     # complet et l'installation lourde ne sont declenches qu'apres validation).
-    $CheckScriptUrl = "https://gitlab.com/allain.mickael/wsl-dev-setup/-/raw/main/scripts/windows/check-prerequisites.ps1"
+    $CheckScriptUrl = "https://raw.githubusercontent.com/milelievre/wsl-dev-setup-main/refs/heads/main/scripts/windows/check-prerequisites.ps1"
 
     Write-Host "==> Telechargement du script de verification des prerequis..." -ForegroundColor Cyan
     $checkScriptContent = (Invoke-WebRequest -Uri $CheckScriptUrl -UseBasicParsing).Content
@@ -214,7 +214,7 @@ function Invoke-WslDevSetup {
     # ========================================================
     # CONFIGURATION DU DEPOT GIT
     # ========================================================
-    $RepoZipUrl = "https://gitlab.com/allain.mickael/wsl-dev-setup/-/archive/main/wsl-dev-setup-main.zip"
+    $RepoZipUrl = https://github.com/milelievre/wsl-dev-setup-main/archive/refs/heads/main.zip"
 
     # Demande de l'utilisateur Linux
     $TargetUser = Read-Host "Entrez le nom d'utilisateur Linux souhaite (ex: mallain)"
